@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "playfair";
+  src: url(/font/PlayfairDisplay-Regular.otf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/font2/Roboto-Light.ttf);
+}
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  height: 998px;
+  background: url("./slike/Path\ 2.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+  background-position-y: 343px;
+  background-position-x: 0 auto;
+  background-size: 1443px 732px;
+  background-size: cover;
+}
+.header-logo img {
+  width: 253, 6px;
+  height: 97.32px;
+  padding: 45px 411.4px 54.68px 165px;
+}
+.header-description {
+  width: 632px;
+  height: 104px;
+  padding: 0 33px 0 165px;
+}
+.header-description p {
+  padding-bottom: 20.25px;
+  font-family: "playfair";
+  text-align: left;
+  line-height: 56px;
+  letter-spacing: 0px;
+  color: #505050;
+  font-size: 36px;
+  border-bottom: 1px solid #dadada;
+}
+.main-description-1 {
+  height: 88px;
+  width: 584px;
+  padding: 75.75px 81px 60px 165px;
+}
+.main-description-1 p {
+  font-size: 32px;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #505050;
+}
+.main-description-1 p em {
+  color: #00b8b0;
+  font-family: "Roboto", sans-serif;
+}
+.main-description p b {
+  color: #505050;
+  font-style: italic;
+}
+.main-description-2 {
+  padding: 0 63px 316px 165px;
+  width: 602px;
+  height: 137px;
+  font-family: "Roboto";
+  font-size: 24px;
+}
+.main-description-2 p {
+  font-size: 24px;
+  font-family: "Roboto";
+  line-height: 36px;
+  color: #505050;
+  letter-spacing: 0;
+  letter-spacing: 0;
+  text-align: left;
+}
+.main-description-2 p em {
+  color: #00b8b0;
+  font-size: 24px;
+  font-family: "Roboto";
+}
+.rectangle {
+  margin: 94px 165px 126px 0;
+  width: 445px;
+  height: 710px;
+  float: right;
+  box-shadow: 0px 5px 14px #00000022;
+  border-radius: 3px;
+  border: 3px;
+  background-color: #ffffff;
+}
+.rectangle label {
+  font-family: "Roboto";
+  font-size: 18px;
+  text-align: left;
+  line-height: 22px;
+  color: #505050;
+  padding-left: 58px;
+  padding-top: 22px;
+}
+.rectangle label:nth-child(1) {
+  margin-top: 22px;
+}
+.rectangle input {
+  display: flex;
+  font-size: 18px;
+  font-family: "Roboto";
+  text-align: left;
+  line-height: 22px;
+  color: #505050;
+  padding-left: 22px;
+  width: 330px;
+  height: 60px;
+  margin: 0 57px 29px 58px;
+}
+.rectangle button {
+  width: 213px;
+  height: 60px;
+  background-color: #00b8b0;
+  color: #ffffff;
+  margin: 30px 116px 33px 116px;
+}
+.social {
+  margin-top: 126px;
+  float: right;
+}
+
+/*Validacija ispravna strana*/
+
+body {
+  margin: 0 auto;
+  width: 1440px;
+  height: 998px;
+  background-color: #ffffff;
+}
+.circle {
+  width: 42px;
+  height: 42px;
+  background: #000000;
+  margin: 27px 35px 57px 1363px;
+  border-radius: 50%;
+}
+.success {
+  margin: 0 663px 47px 663px;
+}
+.success img {
+  height: 114px;
+  width: 114px;
+}
+.main-content {
+  height: 200px;
+  width: 484px;
+  margin: 0 477.5px 35px 478.5px;
+}
+.main-content p {
+  font-family: "playfair";
+  font-size: 24px;
+  text-align: center;
+  line-height: 56px;
+  color: #505050;
+}
+.arrow #arrowimg {
+  width: 94px;
+  height: 86px;
+  margin: 0 657px 28px 689px;
+}
+.arrow button {
+  height: 60px;
+  width: 248px;
+  background-color: #00b8b0;
+  color: #ffffff;
+  margin: 0 595px 112px 597px;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+.arrow button img {
+  margin-right: 10px;
+}
+.arrow #ampllogo {
+  margin: 0 593.4px 92.68px 593px;
+}
+.background-shapes #left {
+  float: left;
+  width: 355px;
+  height: 356px;
+  margin-top: -380px;
+}
+.background-shapes #right {
+  float: right;
+  margin-top: -511px;
+  width: 283px;
+  height: 511px;
+}

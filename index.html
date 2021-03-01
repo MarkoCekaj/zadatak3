@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Amplitudo web poklon</title>
+  </head>
+  <body>
+    <div class="rectangle">
+      <form
+        onsubmit=" return validate_form()"
+        name="myForm"
+        action="./valid-ispravna.html"
+        method="POST"
+        id="myForm"
+      >
+        <label for="imeFirme">Naziv firme</label>
+        <input type="text" id="imeFirme" />
+        <label for="kontakt">Kontakt osoba</label>
+        <input type="text" id="kontakt" />
+        <label for="email">Email</label>
+
+        <input type="text" id="email" />
+
+        <label for="brtel">Broj telefona</label>
+        <input type="tel" id="brtel" />
+        <label for="website">Website</label>
+        <input type="text" id="website" />
+        <button type="submit">PRIJAVITE</button>
+      </form>
+      <div class="social">
+        <a href="#"><img src="./slike/Facebook.png" /></a>
+        <a href="#"><img src="./slike/Linkedin.png" /></a>
+        <a><img src="./slike/Instagram Circle.png" /></a>
+      </div>
+    </div>
+    <div class="header-logo"><img src="./slike/Group 27.png" /></div>
+
+    <div class="header-description">
+      <p>U čast odlazeće 2018. godine Amplitudo poklanja besplatan website!</p>
+    </div>
+
+    <div class="main-description-1">
+      <p>
+        Popunite formu i prijavite se za <b>besplatan</b> website u iznosu od
+        <em>2000€!</em>
+      </p>
+    </div>
+    <div class="main-description-2">
+      <p>
+        Prijave traju do <em>25.12.2018. u 12 sati</em>, kada ćemo izvačiti
+        dobitnika, a možda ime Vaše firme bude u srećnoj koverti!<br /><br />
+        Počnite 2019. godinu sa novom web prezentacijom!
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
