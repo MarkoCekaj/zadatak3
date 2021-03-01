@@ -1,6 +1,6 @@
 function validate_form() {
   var illegalChars = /[\(\)\<\>\,\;\:\\\/\"\[\]]/;
-
+  var re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   valid = true;
 
   if (document.myForm.imeFirme.value == "") {
@@ -13,18 +13,16 @@ function validate_form() {
     document.myForm.kontakt.style.background = "Yellow";
     alert("Unesite kontakt osobu");
     valid = false;
-  } else document.myForm.imeFirme.style.background = "white";
+  } else document.myForm.kontakt.style.background = "white";
 
-  if (document.myForm.email.value.match(illegalChars)) {
-    document.myForm.email.style.background = "Yellow";
-    alert("Illegal Characters");
+  if (document.myForm.email.value.match(re)) {
+    alert("Dobar mail");
+    valid = true;
+  } else {
+    alert("nije dobar");
+
     valid = false;
-  } else document.myForm.imeFirme.style.background = "white";
-  if (document.myForm.email.value == 0) {
-    document.myForm.email.style.background = "Yellow";
-    alert("Please fill in the 'Email' box.");
-    valid = false;
-  } else document.myForm.imeFirme.style.background = "white";
+  }
 
   return valid;
 }
