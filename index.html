@@ -15,30 +15,30 @@
   <body>
     <div class="rectangle">
       <form
-        onsubmit=" return validate_form()"
+        method="GET"
         name="myForm"
-        action="./valid-ispravna.html"
-        method="POST"
+        action="valid-ispravna.html"
+        onsubmit=" return validate_form()"
         id="myForm"
       >
         <label for="imeFirme">Naziv firme</label>
-        <input type="text" id="imeFirme" />
+        <input type="text" id="imeFirme" placeholder="ex. Amplitudo DOO" />
         <label for="kontakt">Kontakt osoba</label>
-        <input type="text" id="kontakt" />
+        <input type="text" id="kontakt" placeholder="Marko Markovic" />
         <label for="email">Email</label>
 
-        <input type="text" id="email" />
+        <input type="text" id="email" placeholder="markomarkovic@gmail.com" />
 
         <label for="brtel">Broj telefona</label>
-        <input type="tel" id="brtel" />
+        <input type="tel" id="brtel" placeholder="+382******" />
         <label for="website">Website</label>
-        <input type="text" id="website" />
-        <button type="submit">PRIJAVITE</button>
+        <input type="text" id="website" placeholder="amplitudo.me" />
+        <button type="submit">PRIJAVITE SE</button>
       </form>
       <div class="social">
         <a href="#"><img src="./slike/Facebook.png" /></a>
         <a href="#"><img src="./slike/Linkedin.png" /></a>
-        <a><img src="./slike/Instagram Circle.png" /></a>
+        <a href="#"><img src="./slike/InstagramCircle.png" /></a>
       </div>
     </div>
     <div class="header-logo"><img src="./slike/Group 27.png" /></div>
@@ -49,8 +49,9 @@
 
     <div class="main-description-1">
       <p>
-        Popunite formu i prijavite se za <b>besplatan</b> website u iznosu od
-        <em>2000€!</em>
+        Popunite formu i prijavite se za <em id="em1">besplatan</em> website u
+        iznosu od
+        <em id="em2">2000€!</em>
       </p>
     </div>
     <div class="main-description-2">
