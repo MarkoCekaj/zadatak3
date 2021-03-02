@@ -24,12 +24,12 @@ body {
   height: 998px;
   background: url("./slike/Path\ 2.png") 0% 0% no-repeat padding-box;
   opacity: 1;
-  background-position-y: 300px;
+  background-position-y: 150px;
   background-position-x: 0 auto;
   background-size: cover;
 }
 .header-logo img {
-  width: 253, 6px;
+  width: 253.6px;
   height: 97.32px;
   padding: 45px 411.4px 54.68px 165px;
 }
@@ -48,12 +48,13 @@ body {
   letter-spacing: 0px;
   color: #505050;
   font-size: 36px;
+  margin-bottom: 0;
   border-bottom: 1px solid #dadada;
 }
 .main-description-1 {
   height: 88px;
   width: 584px;
-  padding: 75.75px 81px 60px 165px;
+  padding: 75.75px 81px 0 165px;
 }
 .main-description-1 p {
   font-size: 32px;
@@ -66,19 +67,21 @@ body {
 .main-description-1 p #em2 {
   color: #00b8b0;
   font-family: "Roboto-Light", sans-serif;
+  font-style: normal;
 }
 .main-description-1 p #em1 {
   color: #505050;
   font-family: "Roboto-MediumItalic";
 }
 .main-description-2 {
-  padding: 0 63px 316px 165px;
+  padding: 60px 63px 316px 165px;
   width: 605px;
   height: 137px;
   font-family: "Roboto-Light";
   font-size: 24px;
 }
 .main-description-2 p {
+  margin-top: 28px;
   font-size: 24px;
   font-family: "Roboto-Light";
   line-height: 36px;
@@ -90,6 +93,7 @@ body {
   color: #00b8b0;
   font-size: 24px;
   font-family: "Roboto-Light";
+  font-style: normal;
 }
 .rectangle {
   padding-top: 30px;
@@ -109,7 +113,6 @@ body {
   line-height: 22px;
   color: #505050;
   padding-left: 58px;
-  padding-bottom: 7px;
 
   height: 21px;
   width: 490.6px;
@@ -125,7 +128,7 @@ body {
   padding-left: 22px;
   width: 330px;
   height: 60px;
-  margin: 0 57px 29px 58px;
+  margin: 7px 57px 29px 58px;
 }
 .rectangle button {
   border-radius: 3px;
@@ -135,7 +138,7 @@ body {
   height: 60px;
   background-color: #00b8b0;
   color: #ffffff;
-  margin: 30px 116px 33px 116px;
+  margin: 0 116px 33px 116px;
   font-size: 18px;
 }
 .social {
@@ -147,6 +150,31 @@ body {
 }
 .social img:nth-child(3) {
   margin-right: 0;
+}
+#validation-warning1 {
+  padding-left: 58px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+#validation-warning2 {
+  padding-left: 58px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+#validation-warning3 {
+  padding-left: 58px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+#validation-warning4 {
+  padding-left: 58px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+#validation-warning5 {
+  padding-left: 58px;
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 /*Validacija ispravna strana*/
