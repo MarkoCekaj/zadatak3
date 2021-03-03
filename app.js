@@ -1,10 +1,12 @@
 function validate_form() {
   var reg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
-  var telreg = /^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$/;
+  var telreg = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/im;
   var webreg = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
   var namereg = /^[a-z ,.'-]+$/i;
+  var numbers = /^[0-9]+$/;
+  var illegal = /^.*?(?=[\^#%&$\*:<>\?/\{\|\}]).*$/;
   valid = true;
-
+  //validacija imeFirme//
   if (document.myForm.imeFirme.value == "") {
     document.myForm.imeFirme.style.border = "1px solid red";
     document.myForm.imeFirme.style.margin = "7px 57px 0 58px";
@@ -16,8 +18,24 @@ function validate_form() {
     document.myForm.imeFirme.style.border = "1px solid green";
     document.getElementById("validation-warning1").innerHTML = null;
   }
-
-  if (document.myForm.kontakt.value.match(namereg)) {
+  //validacija kontakt//
+  if (document.myForm.kontakt.value == "") {
+    document.myForm.kontakt.style.border = "1px solid red";
+    document.myForm.kontakt.style.margin = "7px 57px 0 58px";
+    document.getElementById(
+      "validation-warning2"
+    ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">  Polje ne smije biti prazno</i>`;
+    valid = false;
+  } else if (
+    document.myForm.kontakt.value.match(numbers) ||
+    document.myForm.kontakt.value.match(illegal)
+  ) {
+    document.myForm.kontakt.style.border = "1px solid red";
+    document.getElementById(
+      "validation-warning2"
+    ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">Neispravan unos</i>`;
+    valid = false;
+  } else if (document.myForm.kontakt.value.match(namereg)) {
     document.myForm.kontakt.style.border = "1px solid green";
     document.getElementById("validation-warning2").innerHTML = null;
   } else {
@@ -25,12 +43,18 @@ function validate_form() {
     document.myForm.kontakt.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning2"
-    ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">  Polje ne smije da bude prazno ili da sadrzi brojeve</i>`;
-
+    ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">Neispravan unos</i>`;
     valid = false;
   }
-
-  if (document.myForm.email.value.match(reg)) {
+  //validacija email//
+  if (document.myForm.email.value == "") {
+    document.myForm.email.style.border = "1px solid red";
+    document.myForm.email.style.margin = "7px 57px 0 58px";
+    document.getElementById(
+      "validation-warning3"
+    ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Polje ne smije biti prazno</i>`;
+    valid = false;
+  } else if (document.myForm.email.value.match(reg)) {
     document.myForm.email.style.border = "1px solid green";
     document.getElementById("validation-warning3").innerHTML = null;
   } else {
@@ -41,7 +65,15 @@ function validate_form() {
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">  E-mail mora biti u formatu example@google.com</i>`;
     valid = false;
   }
-  if (document.myForm.brtel.value.match(telreg)) {
+  //validacija broj telefona//
+  if (document.myForm.brtel.value == "") {
+    document.myForm.brtel.style.border = "1px solid red";
+    document.myForm.brtel.style.margin = "7px 57px 0 58px";
+    document.getElementById(
+      "validation-warning4"
+    ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Polje ne smije biti prazno</i>`;
+    valid = false;
+  } else if (document.myForm.brtel.value.match(telreg)) {
     document.myForm.brtel.style.border = "1px solid green";
     document.getElementById("validation-warning4").innerHTML = null;
   } else {
@@ -49,10 +81,18 @@ function validate_form() {
     document.myForm.brtel.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning4"
-    ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">  Broj mora biti u formatu +382*******</i>`;
+    ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Format mora biti +382**** ili 06*******</i>`;
     valid = false;
   }
-  if (document.myForm.website.value.match(webreg)) {
+  //validacija website
+  if (document.myForm.website.value == "") {
+    document.myForm.website.style.border = "1px solid red";
+    document.myForm.website.style.margin = "7px 57px 0 58px";
+    document.getElementById(
+      "validation-warning5"
+    ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; "> Polje ne smije biti prazno</i>`;
+    valid = false;
+  } else if (document.myForm.website.value.match(webreg)) {
     document.myForm.website.style.border = "1px solid green";
     document.getElementById("validation-warning5").innerHTML = null;
   } else {
