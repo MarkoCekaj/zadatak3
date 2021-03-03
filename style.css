@@ -149,7 +149,7 @@ body {
   margin-right: 15px;
 }
 .social img:nth-child(3) {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 #validation-warning1 {
   padding-left: 58px;
@@ -180,9 +180,6 @@ body {
 /*Validacija ispravna strana*/
 
 body {
-  margin: 0 auto;
-  width: 1440px;
-  height: 998px;
   background-color: #ffffff;
 }
 .circle {
