@@ -5,6 +5,7 @@ const namereg = /^[a-z ,.'-]+$/i;
 const numbers = /^[0-9]+$/;
 const illegal = /^.*?(?=[\^#%&$\*:<>\?/\{\|\}]).*$/;
 let valid = true;
+
 document.myForm.addEventListener("submit", function validacija(e) {
   e.preventDefault();
   validacijaFirme();
@@ -28,7 +29,9 @@ function validacijaFirme() {
     document.getElementById(
       "validation-warning1"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red;">Neispravan unos</i>`;
+
     valid = false;
+    document.myForm.imeFirme.focus();
   } else if (document.myForm.imeFirme.value == "") {
     document.myForm.imeFirme.style.border = "2px solid red";
     document.myForm.imeFirme.style.margin = "7px 57px 0 58px";
@@ -36,6 +39,7 @@ function validacijaFirme() {
       "validation-warning1"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red;">  Polje ne smije biti prazno </i>`;
     valid = false;
+    document.myForm.imeFirme.focus();
   } else {
     document.myForm.imeFirme.style.border = "2px solid green";
     document.getElementById("validation-warning1").innerHTML = null;
