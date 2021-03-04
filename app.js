@@ -7,16 +7,15 @@ const illegal = /^.*?(?=[\^#%&$\*:<>\?/\{\|\}]).*$/;
 let valid = true;
 document.myForm.addEventListener("submit", function validacija(e) {
   e.preventDefault();
-
-  if (
-    validacijaFirme(valid) == true &&
-    validacijaKontakt(valid) == true &&
-    validacijaEmail(valid) == true &&
-    validacijaTelefon(valid) == true &&
-    validacijaWeb(valid) == true
-  ) {
+  validacijaFirme();
+  validacijaKontakt();
+  validacijaEmail();
+  validacijaTelefon();
+  validacijaWeb();
+  if (valid) {
     document.myForm.submit();
   }
+
   console.log(valid);
   console.log(document.myForm);
 });
@@ -42,8 +41,6 @@ function validacijaFirme() {
     document.getElementById("validation-warning1").innerHTML = null;
     valid = true;
   }
-
-  return valid;
 }
 
 //validacija kontakt//
@@ -77,7 +74,6 @@ function validacijaKontakt() {
     ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">Neispravan unos</i>`;
     valid = false;
   }
-  return valid;
 }
 
 //validacija email//
@@ -101,7 +97,6 @@ function validacijaEmail() {
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">  E-mail mora biti u formatu example@google.com</i>`;
     valid = false;
   }
-  return valid;
 }
 //validacija broj telefona//
 function validacijaTelefon() {
@@ -124,7 +119,6 @@ function validacijaTelefon() {
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Format mora biti +382**** ili 06*******</i>`;
     valid = false;
   }
-  return valid;
 }
 //validacija website
 function validacijaWeb() {
@@ -147,5 +141,4 @@ function validacijaWeb() {
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">  Website mora biti u formatu www.example.com</i>`;
     valid = false;
   }
-  return valid;
 }
