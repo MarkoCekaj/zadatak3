@@ -22,27 +22,46 @@
   </head>
   <body>
     <div class="rectangle">
-      <form
-        method="GET"
-        name="myForm"
-        action="valid-ispravna.html"
-        onsubmit=" return validate_form()"
-        id="myForm"
-      >
+      <form method="GET" name="myForm" action="valid-ispravna.html" id="myForm">
         <label for="imeFirme">Naziv firme</label>
-        <input type="text" id="imeFirme" placeholder="Unesite naziv firme" />
+        <input
+          type="text"
+          id="imeFirme"
+          placeholder="Unesite naziv firme"
+          onkeyup=" validacijaFirme()"
+        />
         <p id="validation-warning1"></p>
         <label for="kontakt">Kontakt osoba</label>
-        <input type="text" id="kontakt" placeholder="Unesite kontakt osobu" />
+        <input
+          type="text"
+          id="kontakt"
+          placeholder="Unesite kontakt osobu"
+          onkeyup="validacijaKontakt()"
+        />
         <p id="validation-warning2"></p>
         <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Unesite e-mail" />
+        <input
+          type="text"
+          id="email"
+          placeholder="Unesite e-mail"
+          onkeyup="validacijaEmail()"
+        />
         <p id="validation-warning3"></p>
         <label for="brtel">Broj telefona</label>
-        <input type="tel" id="brtel" placeholder="Unesite broj telefona" />
+        <input
+          type="tel"
+          id="brtel"
+          placeholder="Unesite broj telefona"
+          onkeyup="validacijaTelefon()"
+        />
         <p id="validation-warning4"></p>
         <label for="website">Website</label>
-        <input type="text" id="website" placeholder="Unesite URL sajta" />
+        <input
+          type="text"
+          id="website"
+          placeholder="Unesite URL sajta"
+          onkeyup="validacijaWeb()"
+        />
         <p id="validation-warning5"></p>
         <button type="submit">PRIJAVITE SE</button>
       </form>
