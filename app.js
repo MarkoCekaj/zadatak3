@@ -63,6 +63,7 @@ function validacijaKontakt() {
     document.getElementById(
       "validation-warning2"
     ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">Neispravan unos</i>`;
+    document.myForm.kontakt.style.margin = "7px 57px 0 58px";
     valid = false;
   } else if (document.myForm.kontakt.value.match(namereg)) {
     document.myForm.kontakt.style.border = "1px solid green";
