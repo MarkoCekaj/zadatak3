@@ -24,21 +24,21 @@ document.myForm.addEventListener("submit", function validacija(e) {
 //validacija imeFirme//
 function validacijaFirme() {
   if (document.myForm.imeFirme.value.match(illegal)) {
-    document.myForm.imeFirme.style.border = "1px solid red";
+    document.myForm.imeFirme.style.border = "2px solid red";
     document.myForm.imeFirme.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning1"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red;">Neispravan unos</i>`;
     valid = false;
   } else if (document.myForm.imeFirme.value == "") {
-    document.myForm.imeFirme.style.border = "1px solid red";
+    document.myForm.imeFirme.style.border = "2px solid red";
     document.myForm.imeFirme.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning1"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red;">  Polje ne smije biti prazno </i>`;
     valid = false;
   } else {
-    document.myForm.imeFirme.style.border = "1px solid green";
+    document.myForm.imeFirme.style.border = "2px solid green";
     document.getElementById("validation-warning1").innerHTML = null;
     valid = true;
   }
@@ -49,7 +49,7 @@ function validacijaFirme() {
 //validacija kontakt//
 function validacijaKontakt() {
   if (document.myForm.kontakt.value == "") {
-    document.myForm.kontakt.style.border = "1px solid red";
+    document.myForm.kontakt.style.border = "2px solid red";
     document.myForm.kontakt.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning2"
@@ -59,18 +59,18 @@ function validacijaKontakt() {
     document.myForm.kontakt.value.match(numbers) ||
     document.myForm.kontakt.value.match(illegal)
   ) {
-    document.myForm.kontakt.style.border = "1px solid red";
+    document.myForm.kontakt.style.border = "2px solid red";
     document.getElementById(
       "validation-warning2"
     ).innerHTML = `<i class="fa fa-exclamation-circle"style="font-size: 17px;color: red; ">Neispravan unos</i>`;
     document.myForm.kontakt.style.margin = "7px 57px 0 58px";
     valid = false;
   } else if (document.myForm.kontakt.value.match(namereg)) {
-    document.myForm.kontakt.style.border = "1px solid green";
+    document.myForm.kontakt.style.border = "2px solid green";
     document.getElementById("validation-warning2").innerHTML = null;
     valid = true;
   } else {
-    document.myForm.kontakt.style.border = "1px solid red";
+    document.myForm.kontakt.style.border = "2px solid red";
     document.myForm.kontakt.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning2"
@@ -83,18 +83,18 @@ function validacijaKontakt() {
 //validacija email//
 function validacijaEmail() {
   if (document.myForm.email.value == "") {
-    document.myForm.email.style.border = "1px solid red";
+    document.myForm.email.style.border = "2px solid red";
     document.myForm.email.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning3"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Polje ne smije biti prazno</i>`;
     valid = false;
   } else if (document.myForm.email.value.match(reg)) {
-    document.myForm.email.style.border = "1px solid green";
+    document.myForm.email.style.border = "2px solid green";
     document.getElementById("validation-warning3").innerHTML = null;
     valid = true;
   } else {
-    document.myForm.email.style.border = "1px solid red";
+    document.myForm.email.style.border = "2px solid red";
     document.myForm.email.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning3"
@@ -106,18 +106,18 @@ function validacijaEmail() {
 //validacija broj telefona//
 function validacijaTelefon() {
   if (document.myForm.brtel.value == "") {
-    document.myForm.brtel.style.border = "1px solid red";
+    document.myForm.brtel.style.border = "2px solid red";
     document.myForm.brtel.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning4"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">Polje ne smije biti prazno</i>`;
     valid = false;
   } else if (document.myForm.brtel.value.match(telreg)) {
-    document.myForm.brtel.style.border = "1px solid green";
+    document.myForm.brtel.style.border = "2px solid green";
     document.getElementById("validation-warning4").innerHTML = null;
     valid = true;
   } else {
-    document.myForm.brtel.style.border = "1px solid red";
+    document.myForm.brtel.style.border = "2px solid red";
     document.myForm.brtel.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning4"
@@ -129,18 +129,18 @@ function validacijaTelefon() {
 //validacija website
 function validacijaWeb() {
   if (document.myForm.website.value == "") {
-    document.myForm.website.style.border = "1px solid red";
+    document.myForm.website.style.border = "2px solid red";
     document.myForm.website.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning5"
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; "> Polje ne smije biti prazno</i>`;
     valid = false;
   } else if (document.myForm.website.value.match(webreg)) {
-    document.myForm.website.style.border = "1px solid green";
+    document.myForm.website.style.border = "2px solid green";
     document.getElementById("validation-warning5").innerHTML = null;
     valid = true;
   } else {
-    document.myForm.website.style.border = "1px solid red";
+    document.myForm.website.style.border = "2px solid red";
     document.myForm.website.style.margin = "7px 57px 0 58px";
     document.getElementById(
       "validation-warning5"
