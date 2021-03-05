@@ -165,7 +165,7 @@ function validacijaWeb() {
     valid = false;
   }
   if (valid == false) {
-    document.myForm.website.focus();
+    document.myForm.imeFirme.focus();
   }
   return valid;
 }
