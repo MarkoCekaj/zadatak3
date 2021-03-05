@@ -12,9 +12,16 @@ document.myForm.addEventListener("submit", function validacija(e) {
   validacijaEmail();
   validacijaTelefon();
   validacijaWeb();
-  if (valid) {
+  if (
+    validacijaFirme(valid) == true &&
+    validacijaKontakt(valid) == true &&
+    validacijaEmail(valid) == true &&
+    validacijaTelefon(valid) == true &&
+    validacijaWeb(valid) == true
+  ) {
     document.myForm.submit();
   }
+
   console.log(valid);
   console.log(document.myForm);
 });
@@ -44,6 +51,7 @@ function validacijaFirme() {
   if (valid == false) {
     document.myForm.imeFirme.focus();
   }
+  return valid;
 }
 
 //validacija kontakt//
@@ -80,6 +88,7 @@ function validacijaKontakt() {
   if (valid == false) {
     document.myForm.kontakt.focus();
   }
+  return valid;
 }
 
 //validacija email//
@@ -106,6 +115,7 @@ function validacijaEmail() {
   if (valid == false) {
     document.myForm.email.focus();
   }
+  return valid;
 }
 //validacija broj telefona//
 function validacijaTelefon() {
@@ -131,6 +141,7 @@ function validacijaTelefon() {
   if (valid == false) {
     document.myForm.brtel.focus();
   }
+  return valid;
 }
 //validacija website
 function validacijaWeb() {
@@ -153,4 +164,8 @@ function validacijaWeb() {
     ).innerHTML = `<i class="fa fa-exclamation-circle" style="font-size: 17px;color: red; ">  Website mora biti u formatu www.example.com</i>`;
     valid = false;
   }
+  if (valid == false) {
+    document.myForm.website.focus();
+  }
+  return valid;
 }
