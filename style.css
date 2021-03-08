@@ -460,37 +460,37 @@ body {
     max-width: 720px;
   }
   .success {
-    margin: 50px 0 0 400px;
+    margin: 50px 0 0 450px;
   }
   .success img {
-    height: 114px;
-    width: 114px;
+    height: 158px;
+    width: 158px;
   }
   .main-content {
     height: 200px;
-    width: 300px;
-    margin: 0 0 0 300px;
+    width: 400px;
+    margin: 0 0 0 350px;
   }
   .main-content p {
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     line-height: 40px;
   }
   .arrow #arrowimg {
-    width: 94px;
-    height: 86px;
+    width: 144px;
+    height: 136px;
     margin: 50px 0 70px 420px;
   }
   .arrow button {
-    height: 50px;
-    width: 200px;
-    margin: 100px 0 50px -170px;
+    height: 80px;
+    width: 300px;
+    margin: 100px 0 50px -220px;
   }
   .arrow button img {
     margin-right: 10px;
   }
   .arrow #ampllogo {
-    width: 150px;
+    width: 250px;
     margin-left: 350px;
     margin-top: 0;
   }
@@ -573,28 +573,28 @@ body {
     margin: 50px 0 0 250px;
   }
   .success img {
-    height: 258px;
-    width: 258px;
+    height: 158px;
+    width: 158px;
   }
   .main-content {
     height: 200px;
     width: 550px;
-    margin: 0 0 0 150px;
+    margin: 0 0 0 100px;
   }
   .main-content p {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
     line-height: 40px;
   }
   .arrow #arrowimg {
-    width: 194px;
-    height: 186px;
-    margin: 20px 0 50px 300px;
-    padding: 50px 0 0 0;
+    width: 124px;
+    height: 116px;
+    margin: 20px 0 25px 300px;
+    padding: 0 0 0 0;
   }
   .arrow button {
-    height: 150px;
-    width: 400px;
+    height: 100px;
+    width: 300px;
     margin: 0 0 0 200px;
     font-size: 25px;
   }
@@ -602,7 +602,7 @@ body {
     margin-right: 10px;
   }
   .arrow #ampllogo {
-    width: 400px;
+    width: 300px;
     margin: 50px 0 0 200px;
   }
   .arrow #ampllogo img {
