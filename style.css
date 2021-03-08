@@ -460,7 +460,7 @@ body {
     max-width: 720px;
   }
   .success {
-    margin: 50px 0 0 200px;
+    margin: 50px 0 0 400px;
   }
   .success img {
     height: 114px;
@@ -469,7 +469,7 @@ body {
   .main-content {
     height: 200px;
     width: 300px;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 300px;
   }
   .main-content p {
     font-size: 24px;
@@ -479,7 +479,7 @@ body {
   .arrow #arrowimg {
     width: 94px;
     height: 86px;
-    margin: 50px 0 70px 190px;
+    margin: 50px 0 70px 420px;
   }
   .arrow button {
     height: 50px;
@@ -491,7 +491,7 @@ body {
   }
   .arrow #ampllogo {
     width: 150px;
-    margin-left: 100px;
+    margin-left: 350px;
     margin-top: 0;
   }
   .arrow #ampllogo img {
@@ -512,7 +512,6 @@ body {
     display: flex;
     max-width: 920px;
     flex-direction: column-reverse;
-    overflow-x: hidden;
   }
   body {
     background: #ffffff;
@@ -571,16 +570,16 @@ body {
     background-color: rgb(58, 37, 105);
   }
   .success {
-    margin: 50px 0 0 450px;
+    margin: 50px 0 0 250px;
   }
   .success img {
-    height: 458px;
-    width: 458px;
+    height: 258px;
+    width: 258px;
   }
   .main-content {
     height: 200px;
-    width: 500px;
-    margin: 0 0 0 450px;
+    width: 550px;
+    margin: 0 0 0 150px;
   }
   .main-content p {
     font-size: 45px;
@@ -590,12 +589,13 @@ body {
   .arrow #arrowimg {
     width: 194px;
     height: 186px;
-    margin: 50px 0 100px 550px;
+    margin: 20px 0 50px 300px;
+    padding: 50px 0 0 0;
   }
   .arrow button {
     height: 150px;
     width: 400px;
-    margin: 100px 0 50px -250px;
+    margin: 0 0 0 200px;
     font-size: 25px;
   }
   .arrow button img {
@@ -603,11 +603,10 @@ body {
   }
   .arrow #ampllogo {
     width: 400px;
-    margin-left: 480px;
-    margin-top: 0;
+    margin: 50px 0 0 200px;
   }
   .arrow #ampllogo img {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 0;
   }
   .background-shapes #left {
     display: none;
@@ -644,8 +643,8 @@ body {
     margin: 50px 0 0 400px;
   }
   .success img {
-    height: 428px;
-    width: 428px;
+    height: 328px;
+    width: 328px;
   }
   .main-content {
     height: 200px;
